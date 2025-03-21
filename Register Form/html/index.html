@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Practice Code/Register Form/css/style.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <main class="container">
+        <section class="form-container">
+            <h1 class="form-font">Contact Us</h1>
+            <div class="form">
+                <div class="form-field input_style grid_first_name">
+                    <label for="first-name">First Name *</label> <br>
+                    <input type="text" id="first-name" required>
+                </div>
+                <div class="form-field input_style grid_last_name">
+                    <label for="last-name">Last Name *</label> <br>
+                    <input type="text" id="last-name" required>
+                </div>
+                <div class="form-field input_style grid_email">
+                    <label for="email">Email Address *</label> <br>
+                    <input type="text" id="email" required> <br> <br>
+                    <p>Query Type *</p>
+                </div>
+                <div class="form-field radio-border grid_general_query">
+                    <input type="radio" id="general" name="general-enquiry" required>
+                    <label for="general">General Enquiry</label>
+                </div>
+                <div class="form-field radio-border grid_support_query">
+                    <input type="radio" id="support" name="general-enquiry" required>
+                    <label for="general">Support Request</label>
+                </div>
+            </div>
+
+        <section class="message_field">
+            <div class="form-field">
+                <label for="message-field">Message *</label> <br>
+                <textarea id="message-field" required></textarea> <br> <br>
+                <input type="checkbox" id="consent" required>
+                <label for="consent">I consent to being contacted by the team *</label>
+            </div>
+
+            <div class="form-field btn_style">
+                <input type="submit" value="Submit" id="submit-btn">
+            </div>
+        </section>
+        </section>
+    </main>
+    <script src="/Practice Code/Register Form/javascript/index.js"></script>
+</body>
+</html>
